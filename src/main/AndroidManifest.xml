@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.edist">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Edist"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Custom2txt" />
+        <activity android:name=".SharedMaps" />
+        <activity android:name=".Chat" />
+        <activity android:name=".ShareLoc" />
+        <activity android:name=".Custom3txt" />
+        <activity android:name=".FeedbackMain" />
+        <activity android:name=".ViewDateMap" />
+        <activity android:name=".DateMap" />
+        <activity android:name=".SortByDate" />
+        <activity android:name=".ViewMap" />
+        <activity android:name=".Custom4" />
+        <activity android:name=".Custom3" />
+        <activity android:name=".News" />
+        <activity android:name=".Feedback" />
+        <activity android:name=".Containment" />
+        <activity android:name=".Userhome" />
+        <activity android:name=".Registration" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDgIU-vobEtYg7_DAQccegc-WWFdx11F4w" />
+
+        <activity android:name=".ipset">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+
+        <service android:name=".LocationService" />
+        <service android:name=".SocialDistanceAlert" />
+    </application>
+
+</manifest>
